@@ -17,15 +17,15 @@ error_reporting(E_ALL);
         <div id="mainHeader">
             <div id="navigation">  
                 <ul>
-                    <li><a href="home.html" class="current">Home</a></li>
-                    <li><a href="events.html">Events</a></li>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="events.php">Events</a></li>
                     <li><a href="talent.html">Local Talent</a></li>
                     <li><a href="bulletin.html">Bulletin Board</a></li>
                     <li><a href="apply.html">Apply</a>
-                        <ul>
-                            <li><a href="memberSignup.html">Become A Member</a></li>
+                         <ul>
+                            <li><a href="memberSignUp.php">Become A member</a></li>
                             <li><a href="volunteer.html">Volunteer for TCMC</a></li>
-                            <li><a href="performSignup.html">Perform with Us</a></li>
+                            <li><a href="performSignup.html">Perform with us</a></li>
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
