@@ -71,14 +71,6 @@ p {
     padding: 20px;
 }
 
-.perform p {
-    text-align: left;
-}
-
-.perform li {
-    text-align: left;
-}
-
 /*Beginning of code for image slider*/
 .caption {
     height: 200px;
