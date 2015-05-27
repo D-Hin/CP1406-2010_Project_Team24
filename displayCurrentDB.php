@@ -2,7 +2,7 @@
 <!-- Editted by: Domninic Hin           (14/5/2015) !-->
 
 <!--Establishes Connection to Database!-->
-<?php include("artistDBConnect.php") ?>
+<?php include("artistDBConnection.php") ?>
 
 <html>
     <head></head>

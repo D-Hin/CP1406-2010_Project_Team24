@@ -8,7 +8,7 @@
     
     <body>
         <!-- Form to gather infomation for creating a new artist record !-->
-        <form method="post" action="processing.php">
+        <form method="post" action="dbprocess.php">
             <h1>List New Artist</h1>
             Artist Name:<br>
             <input type = "text" name = "artistName">
