@@ -1,0 +1,603 @@
+@charset "utf-8";
+
+/* The below code is for the image slider on the homepage */
+
+body {
+    background-color: #FA9220;
+    font-family: sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+}
+
+body h1 {
+    font-size: 20pt;
+    padding-bottom: 20px;
+    font-style: normal;
+    padding-left: 20px;
+    margin: 0px;
+    align-content: center;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+h1 span {
+    font-family: 'Amatic SC', cursive;
+    font-size: 64pt;
+    color: #fffff0;
+    position: absolute;
+    top: 50px;
+    left: 320px;
+    
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40pt;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25pt;
+    text-align: left;
+	padding-left: 10px;
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25pt;
+    text-align: left;
+    padding-left: 10px;
+}
+
+h4 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25pt;
+    text-align: left;
+    padding-left: 10px;
+}
+
+h5 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25pt;
+    text-align: left;
+    padding-left: 10px;
+}
+
+p {
+    padding: 20px;
+}
+
+.perform p {
+    text-align: left;
+}
+
+.perform li {
+    text-align: left;
+}
+
+/*Beginning of code for image slider*/
+.caption {
+    height: 200px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+html, body { url(http://codepen.io/images/classy_fabric.png); }
+
+.slides {
+    
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    height: 550px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { 
+    display: block; 
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 400px;
+    height: 400px;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+/*End of the coding for the image slider */
+
+/* css coding for all basic pages */
+
+.current {
+    border-bottom: 3px dashed orange;
+}
+
+#mainHeader {
+    padding-bottom: 5%;
+}
+
+#navigation {
+    font-family: 'Amatic SC', cursive;
+    background-color: #F6F1ED;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation ul {
+    align-content: center;
+    text-align: center;
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding-left: 22%;
+}
+
+#navigation ul a {
+    align-content: center;
+	display: block;
+    width: 125px;
+	color: #333;
+	text-decoration: none;
+	font-size: 20pt;
+	line-height: 32px;
+	padding: 10px;
+	font-family: 'Amatic SC', cursive;
+	word-spacing: 2px;
+    text-align: center;
+	
+}
+
+#navigation ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+
+#navigation ul li:hover {
+    background-color:#D9D9D9;
+}
+
+#navigation ul ul {
+    z-index: 999;
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#F6F1ED;
+	padding:0;
+}
+
+#navigation ul ul li {
+	float:none;
+}
+
+#navigation ul ul a {
+	line-height:120%;
+}
+
+#navigation ul ul ul {
+	top:0;
+	left:100%;
+}
+
+#navigation ul li:hover > ul {
+	display:block
+}
+
+#content {
+    margin-left: 1%;
+	width: 97%;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 50px;
+	height: auto;
+	background-color:#fffff0;
+	text-align:center;
+    margin-bottom: 10px;
+}
+
+#content img {
+ padding: 1%;
+}
+
+#content a {
+    text-decoration: underline;
+    color: orange;
+}
+
+#information {
+    text-align: justify;
+    float: left;
+    width: 48%;
+    padding-left: 20px;
+}
+
+#timeline table td {
+    vertical-align: text-top;
+}
+
+#information img {
+    align-content: center;
+    padding-left: 27%;
+}
+
+#imgs {
+    width: 50%;
+    float: left;
+    padding-top: 250px;
+}
+
+#imgs figcaption {
+    color: gray;
+    padding-bottom: 200px;
+}
+
+#info {
+    width: 70%;
+    padding-left: 15%;
+}
+
+#info h4{
+    text-align: center;
+}
+
+#info h5{
+    text-align: center;
+}
+
+#timeline {
+    padding-top: 30%;
+    width: 100%;   
+}
+
+#timeline table {
+    border: solid;
+    padding: 10px;
+    text-align: left    
+}
+
+#timeline table td {
+    padding: 10px;
+}
+
+form {
+    text-align: left;
+    line-height: 2.5em;
+}
+
+fieldset {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+fieldset legend {
+    font-size: 20pt;
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #808080;
+    width: 100%;
+}
+
+#footer li {
+    display: inline-block;
+}
+	
+#footer ul {
+	margin: 2px;
+	align-content:center;
+	text-align:center;	
+}
+
+#footer ul li a {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20pt;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+#footer ul li a:hover {
+	background-color: #555555;
+}
+
+/*CODE FOR PAGES WITH TWO COLUMN LAYOUT*/
+
+.artist {
+    align-items: center;
+    align-content: center;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    border: 1px solid gray;
+    box-shadow: 10px 10px 5px #888888;        
+}
+
+.artist img {
+    width: 98%;
+}
+
+.post {
+    margin: 20px;
+    box-shadow: 10px 10px 5px #888888;     
+    border: 1px solid gray;
+}
+
+.post p {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.span_1_of_2 p {
+    text-align: justify;
+}
+
+.span_1_of_2 table td {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.span_1_of_2 form {
+    padding-left: 20px;
+}
+
+.span_1_of_2 span img {
+    width: auto;
+}
+
+
+.span_1_of_2 strong{
+    font-size: 20pt;
+    font-family: 'Amatic SC', cursive;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+.span_1_of_2 a strong {
+    font-size: 16pt;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 800 PIXELS */
+
+@media only screen and (max-width: 800px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/*Code for responsive Web design Navigation*/
+@media (max-width: 	1212px) {
+
+    #mainHeader {
+    padding-bottom: 7%;
+    }
+    
+    #mainHeader h1 span {
+        font-family: 'Amatic SC', cursive;
+        font-size: 40pt;
+    }
+}
+
+@media (max-width: 1118px) {
+
+    #mainHeader {
+        padding-bottom: 14%;
+    }
+
+}
+
+@media (max-width: 	856px) {
+
+    #mainHeader h1 span {
+        font-size: 30pt;
+    }
+    
+    #mainHeader {
+        padding-bottom: 18%;
+    }
+    
+    .current {
+    border: none;
+}
+    
+}
+
+@media (max-width: 	743px) {
+
+    #mainHeader {
+        padding-bottom: 25%
+    }
+    
+    .current {
+    border: none;
+    }
+    
+    #footer {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 	725px) {
+
+    #mainHeader h1 span {
+        position: absolute;
+        top: 230px;
+        left: 10px;
+    }
+    
+    #mainHeader {
+        padding-bottom: 30%;
+    }
+    
+    #navigation {
+        position: absolute;
+        top: 280px;
+    }
+}
+
+@media (max-width: 	558px) {
+    #mainHeader {
+        padding-bottom: 43%;
+    }
+}
+
+@media (max-width: 530px) {
+    #mainHeader {
+        padding-bottom: 57%;
+    }
+    
+    #content {
+        margin-left: -2px;
+    }
+
+}

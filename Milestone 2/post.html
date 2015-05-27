@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TCMC - Create a post</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+</head>
+    
+<body>
+
+<div id="mainHeader">
+    <a href="index.html"><img src="Images/violinmusiccentre%20copy.png" alt="Townsville community music center logo"></a>
+    <h1><span>Townsville Community Music Centre</span></h1>
+    
+<div id="navigation">  
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="talent.html">Local Talent</a></li>
+    <li><a href="bulletin.html" class="current">Bulletin Board</a></li>
+    <li><a href="apply.html">Apply</a>
+         <ul>
+            <li><a href="memberSignup.html">Become A member</a></li>
+            <li><a href="volunteer.html">Volunteer for TCMC</a></li>
+            <li><a href="performSignup.html">Perform with us</a></li>
+        </ul>
+    </li>
+    <li><a href="about.html">About Us</a></li>
+</ul> 
+</div>
+</div>
+    
+    <div id="content"><h1>Post an Ad</h1>
+
+<p>The Bulletin Board is a free service, intended not only for selling or advertising, but also for any items of news or general interest. 
+    Photos may be included.</p>
+
+<p>As a contributor you are responsible for the integrity of the information you provide</p>
+<p>The Music Centre will not be involved in any way in the sale of goods advertised on this page.</p>
+
+ <form id="insert" name="insert" method="post" action="userLoginDBConnection.php">
+            <fieldset>
+                <legend>Create a post</legend>
+                <table border="0">
+          
+                    <tr>
+                        <td><label for="title">*Title:</label></td>
+                        <td><input type="text" name="title" id="title"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Name">*Name:</label></td>
+                        <td><input type="text" name="firstName" id="FirstName"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">*Email:</label></td>
+                        <td><input type="text" name="email" id="EmailAddress"></td>
+                    </tr>
+                    <tr><td><label for="short">*Description:</label></td>
+                        
+                        <td><textarea cols="40" rows="5" name="shortdesc"></textarea></td></tr>
+                        <tr><td><label for="picture">Insert a picture:</label></td>
+                        <td><INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 ALLOW="text/*" ></td>
+
+                    <!--
+                        Street number:
+                        <input type="text" name="addressNumber">
+                        Street Name:
+                        <input type="text" name="streetName">
+                        Suburb:
+                        <input type="text" name="suburb">
+                    -->
+                    </tr>
+<!--    May not require...?
+                    Feedback (comments or suggestions):
+                    <input type="text" name="feedback">
+-->
+                </table>
+<!--    Still need to configure this to DB...-->
+                <input type="submit" name="submit" id="submit" value="Post">
+            </fieldset>
+        </form>        
+
+</div>
+
+<div id="footer">
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="bulletin.html">Bulletin Board</a></li>
+    <li><a href="feeder.html">Music Benefits</a></li>
+    <li><a href="talent.html">Local Talent</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="about.html">Contact Us</a></li>
+</ul>    
+</div>    
+
+</body>
+</html>

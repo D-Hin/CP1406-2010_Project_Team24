@@ -1,0 +1,164 @@
+<doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - TCMC</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+</head>
+    
+<body>
+
+<div id="mainHeader">
+    <a href="index.html"><img src="Images/violinmusiccentre%20copy.png" alt="Townsville community music center logo"></a>
+    <h1><span>Townsville Community Music Centre</span></h1>
+    
+<div id="navigation">  
+<ul>
+    <li><a href="index.html" class="current">Home</a></li>
+    <li><a href="events.php">Events</a></li>
+    <li><a href="talent.html">Local Talent</a></li>
+    <li><a href="bulletin.html">Bulletin Board</a></li>
+    <li><a href="apply.html">Apply</a>
+         <ul>
+            <li><a href="memberSignUp.php">Become A member</a></li>
+            <li><a href="volunteer.html">Volunteer for TCMC</a></li>
+            <li><a href="performSignup.html">Perform with us</a></li>
+        </ul>
+    </li>
+    <li><a href="about.html">About Us</a></li>
+</ul> 
+</div>
+</div>
+
+    
+
+<!--Below HTML is for image slider-->
+<div id="content">
+<h1>Home</h1>
+    
+<p>The Townsville Community Music Centre is a not-for-profit organisation. The TCMC presents concerts and workshops throughout the year. It is home to a diverse range of genres, including; classical, jazz, folk, blues, world and contemporary music! Our concerts feature touring artists, as well as locally-based professional and emerging artists.</p>
+    <p><strong> Join us today for some toe tapping fun!</strong> </p>
+
+    <a href=memberSignUp.php><img src="Images/memberbutton.png" alt="Become a TCMC member"></a>
+    <a href=events.html><img src="Images/eventsbutton.png" alt="Buy tickets to our events!"></a><br>
+    <p>Have  a question?</p>
+    <a href="about.html"><img src="Images/contactbutton.png" alt="Contact the TCMC!"></a>
+    
+<!--HTML for slider-->
+    
+    <h2>Upcoming Townsville Community Centre Events:</h2>
+    <ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="Images/harboursideTalent.png" />
+        <div class="caption">
+            <figcaption><p>Harbourside Duo presents Dream Serenade<br>
+            Music of Debussy, Ravel, Faure,<br>
+                Sibelius and others.</p>
+            <p>2pm Sunday 17 May at Townsville Civic Theatre</p>
+            </figcaption>
+            </div>
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="Images/avivaTalent.png" />
+            <div class="caption">
+            <figcaption><p>Aviva Quartet presents Aviva and friends go Abroad<br>
+            Join us for a toe' tappin'<br>
+                Soul searchin' journey!</p>
+            <p>2pm Sunday 17 June at Townsville Civic Theatre</p>
+            </figcaption>
+            </div>
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="Images/concertbandTalent.png" />
+            <div class="caption">
+            <figcaption><p>Townsville Concert Band<br>
+                Performing</p>
+            <p>2pm Sunday 28 June at Townsville Civic Theatre</p>
+            </figcaption>
+            </div>
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+   
+    <li class="slide-container">
+        <div class="slide">
+        </div>
+		<div class="nav">
+			<label for="img-5" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+    </li>
+</ul>   
+
+<!--End of slider Code-->
+
+
+<!--Information on homepage for search ranking-->
+<div class="section group">
+<div class="col span_1_of_2">
+<br>
+<h2>A bit about us:</h2>
+    
+<p>The Townsville Community Music Centre has been a major part of the musical culture of Townsville for many years, hosting a number of musical events in the region. The TCMC is a not-for-profit organisation, which relies on the generosity of it's members and volunteers to keep us going. We are always looking for new people to join in and voluteer. So if you love music, would like to meet some great people and enjoy a good time, please <a href="apply.html"><strong>apply today!</strong></a></p> 
+    
+<p>The TCMC supports local talents, performances from a number of great artists including: Harbourside Duo, Aviva Quartet, Celtic Fyre, THe Dirty Dozen, Aquapella, Townsvilles own Concert band, Wassa and many more!</p>
+    
+</div>    
+    
+<div class="col span_1_of_2">
+<br>
+<h3>Live House Music:</h3>
+    
+<p>TCMC are proud organisers of the Live House Music Service, which sees student musicians perform infront of a live audience at the Townsville Civic Theatre, before concerts. If you are part of a small instrumental group and would like the oppertunity to perform infront of a live audience before a gig, <a href="about.html"><strong>contact the TCMC</strong></a> to apply!</p>
+    
+<p>If you are a performer and would like to play with us, we will produce and promote your performance for you! Please, don't hesitate to <a href="about.html"><strong>contact us</strong></a> for information.</p>
+    
+</div>
+    </div>
+
+<!--Division for footer-->
+<div id="footer">
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="bulletin.html">Bulletin Board</a></li>
+    <li><a href="feeder.html">Music Benefits</a></li>
+    <li><a href="talent.html">Local Talent</a></li>
+    <li><a href="apply.html">Apply</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="about.html">Contact Us</a></li>
+</ul>    
+</div>    
+<!--End footer division-->    
+</div>   
+</body>
+</html>
