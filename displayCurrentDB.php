@@ -8,7 +8,7 @@
     <head></head>
     
     <body>
-<!--Selects all records currently in the database and prints them !-->
+        <!--Selects all records currently in the database and prints them !-->
         <h1>Current Artists</h1>
         <?php
             $sql = "SELECT * FROM artistTable";
@@ -30,11 +30,8 @@
             print_r($rows);
             echo "</pre>";
         ?>
-
-</body>
+    </body>
     
-<footer>
-</footer>
-
-
+    <footer></footer>
+    
 </html>

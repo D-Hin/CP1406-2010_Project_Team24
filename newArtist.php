@@ -3,8 +3,7 @@
 
 <html>
 
-    <head>
-    </head>
+    <head></head>
     
     <body>
         <!-- Form to gather infomation for creating a new artist record !-->
@@ -22,7 +21,6 @@
         </form>
     </body>
     
-    <footer>
-    </footer>
+    <footer></footer>
 
 </html>

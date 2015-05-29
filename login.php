@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    error_reporting(E_ALL);
+?>
+
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -25,6 +31,13 @@
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
+                    
+                    <?php
+                        if($_SESSION['Permission'] == 'admin') {
+                            echo"<li><a href='adminPage.php'>Admin</a></li>";
+                        }
+                    ?>
+                    
                 </ul>
             </div>
         </div>
@@ -38,10 +51,20 @@
                     <table border="0">
                         <form id="log on" name="log on" method="post" action="loginProcess.php">
                             <tr>
+                                <?php
+                                    if ($_SERVER['HTTP_REFERER'] == 'http://localhost:9000/logIn.php') {
+                                        echo "Username or password incorrect. Please try again.";
+                                    }
+                                ?>
                                 <td><label for ="userName">User Name:</label></td>
                                 <td><input type ="text" name ="userName" id = "userName"</td>
                             </tr>
                             <tr>
+                                <?php
+                                    if($_SESSION['ERROR'] == 'Innocrect Password') {
+                                        echo"Innocrect Password";
+                                    } 
+                                ?>
                                 <td><label for ="passWord">Password:</label></td>
                                 <td><input type ="text" name ="passWord" id = "passWord"</td>
                             </tr>

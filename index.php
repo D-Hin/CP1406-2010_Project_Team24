@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+<doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -26,6 +30,16 @@
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
+                    
+                    <?php
+                        if (isset($_SESSION['Status'])) {
+                            if ($_SESSION['Status'] !== 'loggedOut') { ?>
+                    <li><a href="logOut.php"><img src ="Images/logOUT.jpg" alt = "Log Off"></a></li>
+                    <?php }
+                        } else { ?>
+                    <li><a href="logIn.php"><img src ="Images/logIN.jpg" alt = "Log On"></a></li>
+                    <?php } ?>
+                    
                 </ul>
             </div>
         </div>
@@ -137,6 +151,13 @@
                     <h3>Live House Music:</h3>
                     <p>TCMC are proud organisers of the Live House Music Service, which sees student musicians perform infront of a live audience at the Townsville Civic Theatre, before concerts. If you are part of a small instrumental group and would like the oppertunity to perform infront of a live audience before a gig, <a href="about.html"><strong>contact the TCMC</strong></a> to apply!</p>
                     <p>If you are a performer and would like to play with us, we will produce and promote your performance for you! Please, don't hesitate to <a href="about.html"><strong>contact us</strong></a> for information.</p>
+                    
+                    <?php 
+                        if($_SESSION['Permission'] == 'ADMIN') {
+                            echo"<li><a href='adminPage.php'>Admin</a></li>";
+                        }
+                    ?>
+                    
                 </div>
             </div>
             

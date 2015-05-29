@@ -38,7 +38,20 @@
 <div class="section group">
 	<div class="col span_1_of_2">
 
-<div class="artist">
+<?php
+$sql = "SELECT * FROM artistTable";
+foreach ($dbh->query($sql) as $row)
+{
+	$image = $row['artistImage'];
+	echo "<div class="artist">
+        <a href='fullArtistPage.php?ID=" . $row['artistID'] . "'> 
+        <img src='images/$image'></a>
+        <figcaption><strong> $row['artistName'] </strong> $row['artistSummary']     </figcaption></div>";
+	echo "<br>";
+}
+
+?>
+        <div class="artist">
 	<a href="artist.html"><img src="Images/AquapellaTalent.png"></a><figcaption><strong>Aquapella</strong><br> Aquapella are 50 singers from the Townsville area bringing you a cappella world music at its very best: inspiring and uplifting harmonies from around the globe.</figcaption>
 </div>
         

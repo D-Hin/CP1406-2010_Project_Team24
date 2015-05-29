@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -25,6 +26,16 @@
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
+                    
+                    <?php
+                        if (isset($_SESSION['Status'])) {
+                            if ($_SESSION['Status'] !== 'loggedOut') { ?>
+                    <li><a href="logOut.php"><img src ="Images/logOUT.jpg" alt = "Log Off"></a></li>
+                    <?php }
+                        } else { ?>
+                    <li><a href="logIn.php"><img src ="Images/logIN.jpg" alt = "Log On"></a></li>
+                    <?php } ?>
+                    
                 </ul>
             </div>
         </div>
